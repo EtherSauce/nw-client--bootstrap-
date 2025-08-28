@@ -9,8 +9,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <!-- bootstrap css -->
-  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-  <link href="bootstrap.lumen.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- <link href="bootstrap.lumen.min.css" rel="stylesheet" -->
   <!-- bootstrap icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <!-- bootstrap js-->
@@ -18,7 +18,7 @@
   <!-- google font -->
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
   <!-- client css -->
-  <link rel="stylesheet" href="client.css" />
+  <link rel="stylesheet" href="client.css"/>
 </head>
 <body>
     <nav class="navbar navbar-expand-md bg-primary-subtle">
@@ -31,13 +31,22 @@
         <ul class="navbar-nav me-auto my-2 my-lg-0">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Products
+              <i class="bi bi-box-seam"></i> Products
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Browse Categories</a></li>
-              <li><a class="dropdown-item" href="#">Product Search</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-list-ul"></i> Browse Categories</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-search"></i> Product Search</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Current Discounts</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-percent"></i> Current Discounts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-people"></i> Customers
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#"><i class="bi bi-person-plus"></i> Register</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-box-arrow-in-right"></i> Sign In</a></li>
             </ul>
           </li>
         </ul>
@@ -48,6 +57,24 @@
       </div>
     </div>
   </nav>
-  <div class="container-fluid">Hello World!</div>
+
+  <div class="container-fluid py-4 bg-light">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-10 col-lg-8">
+        <div class="card shadow-sm mb-4">
+          <div class="card-header bg-primary text-white d-flex align-items-center">
+            <i class="bi bi-info-circle me-2"></i>
+            <span>Welcome to Northwind Client</span>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Explore Products & Customers</h5>
+            <p class="card-text">Browse our categories, search for products, or register/sign in as a customer to access exclusive discounts and features. Use the navigation bar above to get started.</p>
+            <a href="#" class="btn btn-primary"><i class="bi bi-box-seam"></i> Shop Now</a>
+            <a href="#" class="btn btn-outline-secondary ms-2"><i class="bi bi-person-plus"></i> Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

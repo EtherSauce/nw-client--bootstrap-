@@ -82,13 +82,23 @@
           You don't want to make Chef Anton mad, do you?
         </div>
         <i>Discount expires: 2/25/2025</i><br />
-        <i class="bi bi-receipt"></i> <a href="#" class="discount" data-product="Chef Anton's Italian Seasoning">Discount Code</a>
+        <i class="bi bi-receipt"></i> <a href="#" class="discount" data-product="Chef Anton's Italian Seasoning" data-title="Tis the seasoning" data-code="SEASON12">Discount Code</a>
       </div>
-      <div class="col">
-        Col 2
+      <div class="col px-2 py-4">
+        <h3>Go Green</h3>
+        <div class="mb-4">
+          Genen Shouyu goes on sale very rarely. order now and save 10% off our already low price.
+        </div>
+        <i>Discount expires: 2/25/2025</i><br />
+        <i class="bi bi-receipt"></i> <a href="#" class="discount" data-product="Genen Shouyu" data-title="Go Green" data-code="GREEN10">Discount Code</a>
       </div>
-      <div class="col">
-        Col 3
+      <div class="col px-2 py-4">
+        <h3>Half Price</h3>
+        <div class="mb-4">
+          Just because you can't pronounce "Schoogi Schokolade" doesn't mean you shouldn't buy it. get 50% off!
+        </div>
+        <i>Discount expires: 2/25/2025</i><br />
+        <i class="bi bi-receipt"></i> <a href="#" class="discount" data-product="Schoogi Schokolade" data-title="Half Price" data-code="HALF50">Discount Code</a>
       </div>
     </div>
         </div>
@@ -99,12 +109,12 @@
   <div class="toast-container position-fixed bottom-0 end-0 p-3">
     <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="toast-header">
-        <strong class="me-auto" id="product">Product</strong>
-        <small class="text-body-secondary">discount title</small>
+        <strong class="me-auto" id="toast-title">Title</strong>
+        <small class="text-body-secondary" id="toast-product">Product</small>
         <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
       </div>
-      <div class="toast-body">
-        Discount Code: 1234
+      <div class="toast-body" id="toast-code">
+        Discount Code: CODE
       </div>
     </div>
   </div>
